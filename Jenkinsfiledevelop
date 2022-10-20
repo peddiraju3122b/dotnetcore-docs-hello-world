@@ -15,15 +15,5 @@ pipeline{
             }
             
         }
-        stage('jarfile'){
-            steps{
-                sh '**/target/*.jar'
-            }
-        }
-        stage('.xmlfiles'){
-            steps{
-                sh '**/surefire-reports/*.xml'
-            }
-        }
     }
 }
